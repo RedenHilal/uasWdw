@@ -1,0 +1,190 @@
+:root{
+    --main-color:#EDDFE0;
+    --sec-color: #F5F5F7;
+    --third-color:#B7B7B7;
+    --fourth-color:#705C53;
+    --dark-shade:#C6B2B5;
+    --accent-color: #ec9197;
+    --complement-color: #A5C9D8;
+}
+.cartContainer{
+    min-height: 80vh;
+    border-top: 7px solid var(--main-color);
+    border-bottom: 7px solid var(--main-color);
+    margin-bottom: 7px;
+    background-color: var(--sec-color);
+    padding-bottom: 20px;
+}
+.cartInfoTitle{
+    font-weight: 600;
+    padding: 40px;
+    font-size: large;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom: 4px solid var(--fourth-color);
+}
+.selectedItemContainer{
+    display: flex;
+    margin-top: 20px;
+    
+
+}
+.selectedImageContainer{
+    flex: 0.6;
+    display: flex;
+    justify-content: center;
+    min-height: 300px;
+    padding: 10px;
+    box-shadow: 4px 4px 8px var(--third-color),-4px -4px 8px var(--sec-color);
+}
+.selectedImageContainer:hover{
+    box-shadow: 4px 4px 8px var(--third-color) inset,-4px -4px 8px var(--sec-color) inset;
+    border: none;
+}
+.selectedImageContainer img{
+    width: 65%;
+}
+.selectedInfoContainer{
+    margin-left: 15px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 700;
+}
+.countContainer{
+    margin-top: 20px;
+    width: 150px;
+    height: 30px;
+    border: 2px solid var(--fourth-color);
+    display: flex;
+    justify-content: space-between;
+}
+.plusContainer{
+    border-left: 2px solid var(--fourth-color);
+    height: 100%;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    cursor: pointer;
+}
+.minusContainer{
+    border-right: 2px solid var(--fourth-color);
+    height: 100%;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    cursor: pointer;
+}
+
+.cartTotalPrice{
+    font-size: large;
+    font-weight: 600;
+    margin-left: 41vw;
+
+}
+.checkOutButton{
+    background-color: var(--fourth-color);
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: var(--sec-color);
+    margin-left: 41vw;
+}
+.checkOutButton:hover{
+    filter: brightness(1.1);
+    box-shadow: 4px 4px 8px var(--sec-color) inset, -4px -4px 8px var(--third-color) inset;
+}
+.countInput{
+    width: 70px;
+    text-align: center;
+    font-size: medium;
+    outline: none;
+    border: none;
+}
+
+.removeItemButton{
+    width: 150px;
+    height: 50px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--fourth-color);
+    color: var(--sec-color);
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.removeItemButton:hover{
+    scale: 0.9;
+    background-color: var(--accent-color);
+}
+.noItemContainer{
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 350px;
+}
+.noItemContainer *:first-child{
+    display: flex;
+    font-size: larger;
+    font-weight: 700;
+}
+.noItemContainer *:nth-child(2){
+    margin-top: 10px;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 8px var(--accent-color), -4px -4px 8px var(--sec-color);
+    background-color: var(--main-color);
+    transition: 0.2s ease;
+    text-decoration: none;
+}
+.noItemContainer *:nth-child(2):hover{
+    box-shadow: 4px 4px 8px var(--accent-color) inset, -4px -4px 8px var(--sec-color) inset;
+}
+
+.checkOutPopOut{
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transform: translateY(100%);
+    background-color: rgba(237, 223, 224,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    
+}
+.checkOutPopOut div{
+    width: 300px;
+    height: 100px;
+    background-color: var(--sec-color);
+    opacity: 0.9;
+    font-weight: 600;
+    box-shadow: 4px 4px 8px var(--accent-color), -4px -4px 8px var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.checkOutPopOutTriggered{
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+}

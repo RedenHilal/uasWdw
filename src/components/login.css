@@ -1,0 +1,97 @@
+:root{
+    --main-color:#EDDFE0;
+    --sec-color: #F5F5F7;
+    --third-color:#B7B7B7;
+    --fourth-color:#705C53;
+    --dark-shade:#C6B2B5;
+    --accent-color: #ec9197;
+    --complement-color: #A5C9D8;
+}
+.mainContainer{
+    background-color: var(--sec-color);
+    min-height: 80vh;
+    border-top: 7px solid var(--main-color);
+    border-bottom: 7px solid var(--main-color);
+    margin-bottom: 7px;
+}
+.blockContainer{
+    padding-top: 30px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+.blockContainer div h2:first-child{
+    color: var(--fourth-color);
+    text-shadow: 1px 1px 3px var(--dark-shade);
+}
+.blockContainer input{
+    background-color: var(--sec-color);
+    border: none;
+    color: var(--fourth-color);
+    box-shadow: 4px 4px 10px var(--dark-shade), -4px -4px 10px var(--sec-color);
+    font-size: 16px;
+    width: 20vw;
+    min-width: 250px;
+    padding: 16px 14px;
+    outline: none;
+}
+.blockContainer input:focus{
+    box-shadow: inset 4px 4px 10px var(--dark-shade), inset -4px -4px 10px var(--sec-color);
+}
+.mainLine{
+    width: 50vw;
+    height: 0px;
+    border: 2px solid var(--fourth-color);
+    margin-bottom: 50px;
+}
+.line{
+    width: 50vw;
+    border: 1px solid var(--fourth-color);
+    margin-bottom: 30px;
+}
+.button{
+    margin-top: 50px;
+    width: 150px;
+    height: 40px;
+    font-size: large;
+    font-weight: 400;
+    background-color: var(--sec-color);
+    color:var(--accent-color);
+    box-shadow: 8px 8px 15px var(--dark-shade), -8px -8px 15px var(--sec-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.button:hover{
+    box-shadow: inset 4px 4px 10px var(--dark-shade), inset -4px -4px 10px var(--sec-color);
+}
+
+.info {
+    margin-top: 40px;
+    width: 70vw;
+    border-top: 2px solid var(--dark-shade);
+}
+.info p{
+    margin-left: 30px;
+    color: var(--dark-shade);
+    filter: brightness(0.8);
+}
+.info ul{
+    list-style: none;
+    color: var(--fourth-color);
+    filter: brightness(0.7);
+    font-weight: 600;
+}
+.info li{
+    display: flex;
+    align-items: center;
+}
+.info li svg{
+    max-height:20px ;
+    margin-right: 5px;
+}

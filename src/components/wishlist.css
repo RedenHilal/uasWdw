@@ -1,0 +1,107 @@
+ :root{
+    --main-color:#EDDFE0;
+    --sec-color: #F5F5F7;
+    --third-color:#B7B7B7;
+    --fourth-color:#705C53;
+    --dark-shade:#C6B2B5;
+    --accent-color: #ec9197;
+    --complement-color: #A5C9D8;
+}
+.wishlistContainer{
+    border-top: 7px solid var(--main-color);
+    border-bottom: 7px solid var(--main-color);
+    margin-bottom: 7px;
+    background-color: var(--sec-color);
+    padding-bottom: 20px;
+}
+.headerContainer{
+    padding: 40px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom: 4px solid var(--fourth-color);
+    color: var(--fourth-color);
+    font-weight: 800;
+}
+.wishItemsContainer{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.itemOnWishContainer{
+    display: flex;
+    align-items: center;
+}
+.imageItemOnWishContainer{
+    flex: 1;
+    padding-bottom: 20px;
+    min-height: 250px;
+    margin-top: 10px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid var(--complement-color);
+    border-bottom: 2px solid var(--complement-color);
+    box-shadow: 4px 4px 8px var(--complement-color), -4px -4px 8px var(--sec-color);
+    transition: all 0.3s ease;
+}
+.imageItemOnWishContainer:hover{
+    scale: 1.03;
+}
+.imageItemOnWishContainer img{
+    width: 60%;
+}
+.imageInfoOnWishContainer{
+    margin-left: 20px;
+    font-weight: 550;
+    color: var();
+    flex: 1.5;
+}
+
+.wishItemContainer {
+    
+    padding-bottom: 20px;
+}
+.removeWishBtn{
+    background-color: var(--main-color);
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 8px var(--accent-color), -4px -4px 8px var(--sec-color);
+    cursor: pointer;
+}
+.removeWishBtn:hover{
+    box-shadow: 4px 4px 8px var(--accent-color) inset, -4px -4px 8px var(--sec-color) inset;
+}
+.noWishContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--accent-color);
+    font-weight: 600;
+}
+.noWishContainer *:nth-child(2){
+    box-shadow: 4px 4px 8px var(--accent-color), -4px -4px 8px var(--sec-color);
+    cursor: pointer;
+    margin-top:10px ;
+    background-color: var(--main-color);
+    width: 150px;
+    padding: 5px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--fourth-color);
+    filter: brightness(1);
+    text-decoration: none;
+}
+.noWishContainer *:nth-child(2):hover{
+    box-shadow: 4px 4px 8px var(--accent-color) inset, -4px -4px 8px var(--sec-color) inset;
+} 
+ 

@@ -1,0 +1,24 @@
+.cardContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: 0.2s ease;
+    text-decoration: none;
+    color: var(--fourth-color);
+}
+.cardContainer:hover{
+    scale: 1.02;
+    box-shadow: 4px 4px 8px var(--dark-shade), -4px -4px 8px var(--sec-color) ;
+}
+.cardContainer img{
+    align-self: center;
+
+}
+.namepriceCon{
+    text-align: start;
+}
+.cardImage{
+    width: 350px;
+    height: 350px;
+}

@@ -1,0 +1,78 @@
+:root{
+    --main-color:#EDDFE0;
+    --sec-color: #F5F5F7;
+    --third-color:#B7B7B7;
+    --fourth-color:#705C53;
+    --dark-shade:#C6B2B5;
+    --accent-color: #ec9197;
+    --complement-color: #A5C9D8;
+}
+
+.dashboardContainer{
+    background-color: var(--dark-shade);
+    padding: 0;
+    width: 100%;
+}
+
+.bg{
+    position: relative;
+    filter: brightness(0.6);
+    width: 100%;
+    
+}
+.txtOverlay{
+    position: absolute;
+    color: var(--sec-color);
+    bottom: 50vh;
+    left: 10%;
+    right: 10%;
+    opacity: 0.8;
+    text-align: center;
+    /* transform: translate(-50%, -50%); */
+}
+.btnOverlay{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 30vh;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+.lBtn{
+    text-decoration: none;
+    opacity: 0.8;
+    flex: 1;
+    background-color: var(--fourth-color);
+    color: var(--main-color);
+    width: 150px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rBtn{
+    text-decoration: none;
+    margin-top: 10px;
+    opacity: 0.8;
+    flex: 1;
+    background-color: var(--main-color);
+    color: var(--fourth-color);
+    width: 150px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rBtn:hover{
+    filter: brightness(0.8);
+    cursor: pointer;
+} 
+.lBtn:hover{
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+
+

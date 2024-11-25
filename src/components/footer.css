@@ -1,0 +1,58 @@
+:root{
+    --main-color:#EDDFE0;
+    --sec-color: #F5F5F7;
+    --third-color:#B7B7B7;
+    --fourth-color:#705C53;
+    --dark-shade:#C6B2B5;
+    --accent-color: #ec9197;
+    --complement-color: #A5C9D8;
+}
+.footerContainer{
+    background-color: var(--main-color);
+            color: var(--fourth-color);
+            padding: 20px;
+            text-align: center;
+            overflow-y: hidden;
+}
+
+.footer-links {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    color: var(--accent-color);
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-contact {
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: var(--third-color);
+}
+.profile{
+    margin-top:10px ;
+    display: flex;
+    max-height: 50px;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+}
+.profile .icon{
+    flex-wrap: 1;
+    color: var(--fourth-color);
+    max-height: 50px;
+    height: 50px;
+}
+.profile .icon:hover{
+    filter: brightness(1.3);
+    cursor: pointer;
+}
+IG{
+    height: 50px;
+}
+
